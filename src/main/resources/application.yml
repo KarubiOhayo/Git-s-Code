@@ -1,0 +1,29 @@
+server:
+  port: 8080
+
+github:
+  webhook:
+    secret: ${GITHUB_WEBHOOK_SECRET:change-me}
+
+discord:
+  bot:
+    token: ${DISCORD_BOT_TOKEN:change-me}
+  channel:
+    default-id: ${DISCORD_CHANNEL_ID:000000000000000000}
+  enabled: false
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/gitscode
+    username: gitscode
+    password: gitscode
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
