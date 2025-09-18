@@ -9,7 +9,7 @@ discord:
   bot:
     token: ${DISCORD_BOT_TOKEN:change-me}
   channel:
-    default-id: ${DISCORD_CHANNEL_ID:000000000000000000}
+    default-id: ${DISCORD_CHANNEL_ID:1417800888403230773}
   enabled: false
 
 spring:

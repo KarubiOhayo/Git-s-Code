@@ -19,6 +19,7 @@ public class GithubEventRouter {
       case "pull_request" -> prOpened(payload);
       case "issues" -> issueOpened(payload);
       case "push" -> pushMain(payload);
+      case "ping" -> discord.send("Github Ping 확인! Webhook 연결 OK");
       default -> {}
     }
   }
